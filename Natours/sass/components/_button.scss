@@ -1,5 +1,6 @@
 .btn {
 
+    &,
     &:link,
     &:visited {
         font-size: $default-font-size;
@@ -18,6 +19,10 @@
         -ms-border-radius: 10rem;
         -o-border-radius: 10rem;
         position: relative;
+
+        // Change style for button
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -38,7 +43,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         -webkit-transform: translateY(-1px);
         -moz-transform: translateY(-1px);
