@@ -15,6 +15,10 @@
     -ms-transition: transform .3s;
     -o-transition: transform .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &:hover {
         transform: translateY(-2rem) scale(1.03);
         -webkit-transform: translateY(-2rem) scale(1.03);
@@ -30,6 +34,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include respond(tab-port) {
+            padding: 2rem;
+        }
+    
     }
 
     &__text {}
